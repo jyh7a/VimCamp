@@ -1,13 +1,33 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Box Model</title>
-    </head>
-    <body>
 
-    
-    
+<head>
 
-        
-    </body>
+   <title>Box Model</title>
+   <style>
+      div.item {
+         background: orange;
+         width: 50%;
+         /* default 값이 auto, 보모 기준으로 자동 꽉 채운다 */
+         height: auto;
+         /* 자식 기준으로 자동 조절 */
+         margin-left: auto;
+      }
+
+      div.item:nth-child(2) {
+         margin-left: initial;
+         margin-right: auto;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <div class="item">WOW</div>
+   <div class="item">WOW</div>
+
+
+</body>
+
 </html>
