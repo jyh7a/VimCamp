@@ -11,23 +11,46 @@
          /* default 값이 auto, 보모 기준으로 자동 꽉 채운다 */
          height: auto;
          /* 자식 기준으로 자동 조절 */
-         margin-left: auto;
+         padding: 30px;
+         /* margin-left: auto; */
+
+         /* css3 */
+         box-sizing: border-box;
       }
 
-      div.item:nth-child(2) {
+      /* div.item:nth-child(2) {
          margin-left: initial;
          margin-right: auto;
+      } */
+
+      .item.right {
+         margin-left: auto;
+         ;
       }
    </style>
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
 
-   <div class="item">WOW</div>
-   <div class="item">WOW</div>
+   <div class="block-module">
+      <div class="item">WOW</div>
+      <div class="item right">WOW</div>
+   </div>
 
 
+   <script>
+      // debugger;
+      // var $block_module = $('.block-module').clone();
+      // var $block_module_origin = $block_module;
+
+      for (var i = 0; i < 100; i++) {
+         setTimeout(function () {
+            var $block_module = $('.block-module').eq(0).clone();
+            $block_module.appendTo('body');
+         }, 0)
+      }
+   </script>
 </body>
 
 </html>

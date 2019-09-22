@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-        <title>position</title>
-        <link rel="stylesheet" href="position-css.css">
-        <style>
-            body {
-                background-color: #ddd;
-            }
-            .grand-father {
-                background-color: #eee;
-                width: 800px;
-                margin: 0 auto;
-                padding: 1px;
-            }
-            .father {
-                background-color: white;
-                width: 300px;
-                height: 200px;
-                margin: 50px auto;
-            }
-            .children {
-                width: 100px;
-                height: 100px;
-            }
-        </style>
-	</head>
-	<body>
-        
-        <div class="grand-father">
-            <div class="father">
-                <img class="children" src="img.png">
-            </div>
-        </div>
-       
-	</body>
+
+<head>
+   <meta charset="UTF-8">
+   <title>position</title>
+   <link rel="stylesheet" href="position-css.css">
+   <style>
+      body {
+         background-color: #ddd;
+      }
+
+      .grand-father {
+         background-color: #eee;
+         width: 800px;
+         margin: 0 auto;
+         padding: 1px;
+
+         position: relative;
+      }
+
+      .father {
+         background-color: white;
+         width: 300px;
+         height: 200px;
+         margin: 50px auto;
+
+         position: relative;
+      }
+
+      .children {
+         width: 100px;
+         height: 100px;
+         /* margin-left: -50px; */
+
+         /* position: relative;
+                left: -50px;
+                top: -50px; */
+
+         position: absolute;
+         /* 텍스트가 사라진다 */
+         /* left: 0;
+            top: 0; */
+         right: 0;
+         bottom: 0;
+
+      }
+
+      .pos{
+         /* div abolute주고  */
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         margin: 20px;
+         background-color: orange;
+         transition: 0.3s ease-in-out;
+      }
+
+      .pos:hover{
+         margin: -20px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="grand-father">
+      <div class="father">
+         <img class="children" src="img.png">abcdefg
+         <div class="pos">POS</div>
+      </div>
+   </div>
+
+</body>
+
 </html>

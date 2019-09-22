@@ -1,40 +1,85 @@
-body, h1 {
-    margin: 0;
+body,
+h1 {
+   margin: 0;
 }
 
 body {
-    background-color: #999;
+   background-color: #999;
 }
 
 .header {
-    height: 300px;
-    background-image: url(images/cover.png);
-    background-position: center;
-    overflow: hidden;
+   height: 300px;
+   background-image: url(images/cover.png);
+   background-position: center;
+   overflow: hidden;
+   margin-bottom: -100px;
 }
 
 .contents {
-    background-color: white;
-    width: 860px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
+   background-color: white;
+   width: 860px;
+   margin-bottom: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 50px;
 }
 
 .box-wrapper {
-    overflow: hidden;
-    width: 960px;
-    margin: 50px auto;
+   overflow: hidden;
+   width: 960px;
+   margin: 50px auto;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    margin: 5px;
-    float: left;
-    text-align: center;
-    line-height: 100px;
-    font-family: 'arial';
-    font-size: 50px;
+   width: 100px;
+   height: 100px;
+   background-color: yellow;
+   margin: 5px;
+   float: left;
+   text-align: center;
+   line-height: 100px;
+   font-family: 'arial';
+   font-size: 50px;
+}
+
+.selector {
+   background-color: tomato;
+   margin-left: -50px;
+   margin-right: -50px;
+}
+
+.map {
+   background-color: orange;
+   padding: 50px;
+   text-align: center;
+   color: white;
+   border-radius: 10px;   
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+   /* width 값을 바꾸면서 테스트 */
+   width: auto;
+
+   margin-left: -50px;
+   margin-right: -50px;
+
+   margin: 0 -100px;
+}
+
+.map span {
+   display: block;
+   font-size: 2em;
+   transform: rotateX(0deg);
+   transition: 0.6s ease-in-out;
+}
+
+.map:hover {
+   background-color: cornflowerblue;
+   margin: 0 100px;
+   box-shadow: 0 0 30px black;
+}
+
+.map:hover span {
+   /* opacity: 0.5; */
+   transform: rotateX(1turn);
+   font-size: 2.5em;
 }

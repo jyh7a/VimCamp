@@ -1,0 +1,56 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style: none;
+}
+
+
+.container {
+   width: 800px;
+   margin: 0 auto;
+}
+
+
+
+.timeline {
+   position: relative;
+   /* background-color: antiquewhite; */
+   margin: 0 -30px;
+   border: 10px solid tomato;
+}
+
+.timeline::after {
+   content: '';
+   background-color: palevioletred;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   bottom: 0;
+   width: 30px;
+   /* height: 100%; */
+   margin-left: -15px;
+   margin-top: 30px;
+   margin-bottom: -300px;
+   border-radius: 30px;
+}
+
+.timeline li {
+   /* background: orange; */
+   width: 50%;
+   padding: 0 30px;
+   box-sizing: border-box;
+}
+
+.timeline li:nth-child(even) {
+   margin-left: auto;
+   margin-top: -20px;
+   margin-bottom: -20px;
+}
+
+.yeaer {
+   background-color: dodgerblue;
+   padding: 50px;
+}

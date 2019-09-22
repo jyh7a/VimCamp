@@ -16,11 +16,21 @@ body {
     text-align: center;
     border-right: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-    margin: 70px auto 0;
+    margin: 270px auto 0;
     font-family: 'arial';
 }
 
-.camping img {}
+.camping img {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+
+    /* margin -50px 해줘서 공간 줄어듬 */
+    /* margin-top: -50px;
+    margin-bottom: -50px;
+    background-color: orange; */
+
+    margin-top: -200px;
+}
 
 .camping h1 {
     color: mediumseagreen;
